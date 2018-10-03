@@ -20,7 +20,7 @@ x %>%
   filter(firm %in% good_firms$firm) %>%
   select(date, firm, n, LN, M5S, PD, FdI) %>% 
   gather(key = "party", value = "poll", LN, M5S, PD, FdI) %>%
-  ggplot(aes(x = date, y = poll, color = party)) + geom_point(size = .1)
+  ggplot(aes(x = date, y = poll, color = party)) + geom_smooth()
 ```
 
 Purpose of this document is to show polling results in Italy.
