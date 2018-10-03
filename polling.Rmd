@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
-x <- read_csv("polls_IT-parliament_2018-10-01.csv")
+x <- read_csv("https://pollofpolls.eu/get/polls/IT-parliament/format/csv", guess_max = 2000)
 ```
 
 ```{r, message = FALSE}
